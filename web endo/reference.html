@@ -4,62 +4,71 @@
         reference
     </title>
     <style>
-        img {
-            height: auto;
+        
+        .container {
+            position: relative;
+
         }
 
-        button {
-            position: fixed;
-            left: 20%;
+        .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        }
+        .rodinne_domy {
+            opacity: 0.5;
+            width: 10%;
+            height: auto;
+            left: 32.5%;
+        }
+         #button {
+            position: absolute;
+            left: 32.5%   ;
             background: none; 
             color: black; 
             text-align: center;
             border-style: none; 
+            text-align: center;
+            font-size: x-large;
         }
         #reference {
-            position:fixed;
-            left: 45%;
+            position:absolute;
+            left: 47.5%;
             background: none;
             color: black;
             border-style: none;
+            text-align: center;
+            font-size: x-large;
         }
         #treti_button {
-            position: fixed;
-            left: 70%;
+            position: absolute;
+            left: 62.5%;
             background: none;
             color: black;
             border-style: none;
-        }
-        #bytove_domy{
-            position:fixed;
-            left: 19.5%;
-            background-color:#3f3f3f;
-            color: whitesmoke;
             text-align: center;
+            font-family: source_sans;
+            font-size: x-large;
         }
     </style>
 </head>
     <body>
-        <br>    
+        <br>  
         <a href="kontakty.html">
-                <button>Kontakty</button>
+                <button id="button">kontakty</button>
             </a>
-            <a href="reference.html"*>
-                <button id="reference">Reference</button>
+            <a href="reference.html">
+                <button id="reference">reference</button>
             </a>
-            <a href="treti_button.html">
-                <button id="treti_button">Treti_buttton</button>
+            <a href="o_atelieru.html">
+                <button id="treti_button">o atelieru</button>
             </a>
             <br>
-            <a href="bytove_domy.html">
-               <button id="bytove_domy">
-                <br>
-                <br>
-                Bytové domy
-               <br>
-               <br>
-               <br>
-                </button>
-            </a>
+            <div class="container">
+                <img id="rodine_domy" src="podklady/banners/sample_button.jpg" width="100%" height="100%">
+            <div class="center">hello</div>
+            </div>
     </body>
 </html>
