@@ -9,11 +9,29 @@
             src: url(podklady\font\SourceSansPro-Light.wofftion_light.woff);
         }
 
-        #img { 
-            width: 100%; 
-            height: auto; 
-            border: 0 
-        }
+#responsive{
+   max-width:100%;
+   max-height:100%;
+ }
+
+ .img-responsive {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+
+#center{
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+#parent{
+  position: relative;
+}
 
         #button {
             position: absolute;
@@ -46,7 +64,6 @@
         #zahlavi {
             text-align: center;
             position: absolute;
-            top: 80%;
             left: 40%;
             font-size: x-large;
             color: black;
@@ -54,7 +71,9 @@
     </style>
 </head>
     <body>
-        <br>  
+        <div class="parent">
+            <img class="img-responsive" src="podklady/banners/banner_up.jpg">
+        </div>
         <a href="kontakty.html">
                 <button id="button">kontakty</button>
             </a>
@@ -66,11 +85,8 @@
             </a>
             <br>
             <br>
-            *poznámka* 
             <br>
-            bannery chybí, musím přijít na kvalitní řešení aby se obrázky vešly na monitor
             <br>
-            *konec poznámky*
             <div id="zahlavi">
                 e v a   n o v o t n á   d o r a z i l o v á
                 <br>
@@ -78,6 +94,9 @@
                 evad@email.cz
                 <br>
                 tel.: 608 379 990
+                <br>
+                <br>
+                <br>
             </div>
     </body>
 </html>
