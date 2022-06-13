@@ -11,10 +11,6 @@
     -ms-transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
         }
-        .container {
-            position: relative;
-
-        }
 
         .center {
         position: absolute;
@@ -23,11 +19,7 @@
         transform: translate(-50%, -50%);
         font-size: 18px;
         }
-        .rodinne_domy {
-            opacity: 0.5;
-            width: 10%;
-            height: auto;
-        }
+       
          #button {
             position: absolute;
             left: 32.5%   ;
@@ -83,42 +75,23 @@
   }
 }
 
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 100%;
+.domy {
+  position: absolute;
+  top: 75%;
+  width: 11%;
   height: auto;
 }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+.bytove_domy {
+   right: 59%;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+.rodinne_domy {
+   position: absolute;
+   right: 63%;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.polyfunkcni_domy {
+  right: 20%;
 }
     </style>
 </head>
@@ -136,16 +109,18 @@
             </a>
             <br>
             <br>
-           <a href="bytove_domy.html">
-               <button id="button"> bytove domy</button>
-           </a>
-           <a href="rodinne_domy.html">
-               <button id="reference"> Rodinne domy</button>
-           </a>
-           <a href="polyfunkcni_domy.html">
-               <button id="treti_button">Polyfunkcni a jine domy</button>
+            <br>
+            <br>
+        </div>
+        <a href="bytove_domy.html">
+            <img class="domy" style="right: 58.8%;" src="podklady/buttons/bytové domy.jpg">
             </a>
-           </div>
-           <br>
+            <a href="rodinne_domy.html">
+              <img  class="domy" style="right: 43.5%;" src="podklady/buttons/CEDULKY rodinné domy.jpg">
+            </a>
+            <a href="polyfunkcni_domy.html">
+              <img class="domy" style="right: 28.5%;" src="podklady/buttons/polyfunkční a jiné.jpg">
+            </a>
+            <br>
     </body>
 </html>
