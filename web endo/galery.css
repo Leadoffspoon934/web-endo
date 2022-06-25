@@ -50,6 +50,8 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  font-size: x-large;
+  font-family: sans-serif;
 }
 
 * {
